@@ -21,7 +21,7 @@ Installation
 Clone this repository: git clone https://github.com/example/art-gallery.git
 Install dependencies: npm install
 Start the server: npm start
-Visit the application at http://localhost:3000
+Visit the application at 'https://api.artsy.net/api/tokens/xapp_token',
 Technologies Used
 Node.js
 Artsy API
