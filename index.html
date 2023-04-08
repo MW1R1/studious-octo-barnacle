@@ -3,6 +3,8 @@
 <head>
 	<title>Art Gallery</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="server.js"></script>
 </head>
 <body>
 	<header>
@@ -19,19 +21,19 @@
 	<main>
 		<section id="featured">
 			<h2>Featured Artwork</h2>
-			<div class="artwork">
+			<div class="artwork" id="artwork1">
 				<a href="#"><img src="village.jpeg" alt="Artwork 1"></a>
 				<h3>Artwork 1</h3>
 				<p>Artist: John Smith</p>
 				<p>Price: $100</p>
 			</div>
-			<div class="artwork">
+			<div class="artwork" id="artwork2">
 				<a href="#"><img src="ring.jpeg" alt="Artwork 2"></a>
 				<h3>Artwork 2</h3>
 				<p>Artist: Jane Doe</p>
 				<p>Price: $200</p>
 			</div>
-			<div class="artwork">
+			<div class="artwork" id="artwork3">
 				<a href="#"><img src="whoa.jpeg" alt="Artwork 3"></a>
 				<h3>Artwork 3</h3>
 				<p>Artist: Bob Ross</p>
@@ -40,7 +42,7 @@
 		</section>
 		<section id="search">
 			<h2>Search Artwork</h2>
-			<form>
+			<form id="search-form">
 				<label for="artist">Artist:</label>
 				<input type="text" id="artist" name="artist"><br>
 
@@ -52,6 +54,7 @@
 
 				<input type="submit" value="Search">
 			</form>
+			<div id="search-results"></div>
 		</section>
 	</main>
 	<footer>

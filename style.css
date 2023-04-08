@@ -6,7 +6,7 @@ body {
 }
 
 header {
-	background-color: purple;
+	background-color: #5C2D91;
 	color: #fff;
 	padding: 20px;
 }
@@ -14,13 +14,15 @@ header {
 header h1 {
 	margin: 0;
 	font-size: 40px;
+	text-align: center;
 }
 
 nav ul {
 	list-style: none;
 	margin: 0;
-	padding: 2px;
+	padding: 0;
 	display: flex;
+	justify-content: center;
 }
 
 nav li {
@@ -29,7 +31,14 @@ nav li {
 
 nav a {
 	color: #fff;
-	text-decoration: underline;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 20px;
+	padding: 10px;
+}
+
+nav a:hover {
+	background-color: #40225F;
 }
 
 main {
@@ -45,58 +54,82 @@ section {
 
 section#featured .artwork {
 	margin: 20px 0;
+	background-color: #F4F4F4;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 section#featured .artwork img {
 	width: 100%;
 	height: auto;
+	display: block;
+	margin: auto;
 }
 
 section#featured .artwork h3 {
 	margin: 10px 0;
+	text-align: center;
 }
 
 section#featured .artwork p {
 	margin: 5px 0;
+	text-align: center;
+}
+
+section#search {
+	flex: 1 1 100%;
+	margin-top: 20px;
+}
+
+section#search h2 {
+	font-size: 24px;
+	text-align: center;
+	margin-bottom: 20px;
 }
 
 section#search form {
-	display: list;
-	flex-wrap: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
 section#search label {
-	flex: 200px;
-  margin: 2px;
-  padding: 2px;
+	flex: 1 1 200px;
+	margin: 5px;
+	font-weight: bold;
+	font-size: 20px;
 }
 
 section#search input[type="text"] {
-	flex: 1 1 100px;
+	flex: 1 1 300px;
 	margin: 5px;
-}
-section#search input[type="text"] {
-	flex: 1 1 100px;
-	margin: 5px;
+	padding: 10px;
+	border-radius: 5px;
+	border: 2px solid #5C2D91;
+	font-size: 16px;
 }
 
 section#search input[type="submit"] {
 	flex: 1 1 100px;
-	background-color: black;
+	background-color: #5C2D91;
 	color: #fff;
 	border: none;
 	padding: 10px;
 	cursor: pointer;
+	font-size: 16px;
+	border-radius: 5px;
 }
 
 section#search input[type="submit"]:hover {
-	background-color: purple;
+	background-color: #40225F;
 }
 
 footer {
-	background-color: purple;
+	background-color: #5C2D91;
 	color: #fff;
-	padding: 0;
+	padding: 10px;
 	text-align: center;
 	position: fixed;
 	bottom: 0;
