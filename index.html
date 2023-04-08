@@ -1,78 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Art Gallery</title>
-  <link rel="stylesheet" href="style.css">
+	<title>Art Gallery</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Art Gallery</h1>
-    <nav>
-      <ol>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Artists</a></li>
-        <li><a href="#">Styles</a></li>
-        <li><a href="#">Mediums</a></li>
-        <li><a href="#">My Collection</a></li>
-        <li><a href="#">Cart</a></li>
-        </ol>
-    </nav>
-  </header>
+	<header>
+		<h1>Art Gallery</h1>
+		<nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Browse</a></li>
+				<li><a href="#">Cart</a></li>
+				<li><a href="#">My Collection</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="featured">
+			<h2>Featured Artwork</h2>
+			<div class="artwork">
+				<a href="#"><img src="https://via.placeholder.com/350x250" alt="Artwork 1"></a>
+				<h3>Artwork 1</h3>
+				<p>Artist: John Smith</p>
+				<p>Price: $100</p>
+			</div>
+			<div class="artwork">
+				<a href="#"><img src="https://via.placeholder.com/350x250" alt="Artwork 2"></a>
+				<h3>Artwork 2</h3>
+				<p>Artist: Jane Doe</p>
+				<p>Price: $200</p>
+			</div>
+			<div class="artwork">
+				<a href="#"><img src="https://via.placeholder.com/350x250" alt="Artwork 3"></a>
+				<h3>Artwork 3</h3>
+				<p>Artist: Bob Ross</p>
+				<p>Price: $300</p>
+			</div>
+		</section>
+		<section id="search">
+			<h2>Search Artwork</h2>
+			<form>
+				<label for="artist">Artist:</label>
+				<input type="text" id="artist" name="artist"><br>
 
-  <main>
-    <section id="featured">
-      <h2>Featured Artwork</h2>
-      <div class="artwork-container">
-        <div class="artwork">
-          <img src="village.jpeg" alt="Artwork">
-          <h3>The Village</h3>
-          <p>Pancho</p>
-        </div>
-        <div class="artwork">
-          <img src="ring.jpeg" alt="Artwork">
-          <h3>Ring of Mercy</h3>
-          <p>Di Santa</p>
-        </div>
-        <div class="artwork">
-          <img src="whoa.jpeg" alt="Artwork">
-          <h3>Whoa</h3>
-          <p>Rahim m.j</p>
-        </div>
-      </div>
-    </section>
+				<label for="style">Style:</label>
+				<input type="text" id="style" name="style"><br>
 
-    <section id="search">
-      <h2>Search Artwork</h2>
-      <form>
-        <label for="artist-select">Artist:</label>
-        <select name="artist-select" id="artist-select">
-          <option value="all">All Artists</option>
-          <option value="artist1">Artist 1</option>
-          <option value="artist2">Artist 2</option>
-          <option value="artist3">Artist 3</option>
-        </select>
-        <label for="style-select">Style:</label>
-        <select name="style-select" id="style-select">
-          <option value="all">All Styles</option>
-          <option value="style1">Style 1</option>
-          <option value="style2">Style 2</option>
-          <option value="style3">Style 3</option>
-        </select>
-        <label for="medium-select">Medium:</label>
-        <select name="medium-select" id="medium-select">
-          <option value="all">All Mediums</option>
-          <option value="medium1">Medium 1</option>
-          <option value="medium2">Medium 2</option>
-          <option value="medium3">Medium 3</option>
-        </select>
-        <button type="submit">Search</button>
-      </form>
-    </section>
+				<label for="medium">Medium:</label>
+				<input type="text" id="medium" name="medium"><br>
 
-    <section id="artwork-list">
-      <h2>Artwork List</h2>
-      <div class="artwork-container">
-        <div class="artwork">
-          <img src="ring.jpeg" alt="Artwork">
+				<input type="submit" value="Search">
+			</form>
+		</section>
+	</main>
+	<footer>
+		<p>&copy; 2023 Art Gallery</p>
+	</footer>
+</body>
+</html>
