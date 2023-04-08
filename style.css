@@ -6,30 +6,30 @@ body {
 }
 
 header {
-	background-color: #333;
+	background-color: purple;
 	color: #fff;
 	padding: 20px;
 }
 
 header h1 {
 	margin: 0;
-	font-size: 36px;
+	font-size: 40px;
 }
 
 nav ul {
 	list-style: none;
 	margin: 0;
-	padding: 0;
+	padding: 2px;
 	display: flex;
 }
 
 nav li {
-	margin: 0 10px;
+	margin: 5px;
 }
 
 nav a {
 	color: #fff;
-	text-decoration: none;
+	text-decoration: underline;
 }
 
 main {
@@ -61,22 +61,28 @@ section#featured .artwork p {
 }
 
 section#search form {
-	display: flex;
-	flex-wrap: wrap;
+	display: list;
+	flex-wrap: center;
 }
 
 section#search label {
-	flex: 1 0 100px;
+	flex: 200px;
+  margin: 2px;
+  padding: 2px;
 }
 
 section#search input[type="text"] {
-	flex: 1 1 200px;
+	flex: 1 1 100px;
+	margin: 5px;
+}
+section#search input[type="text"] {
+	flex: 1 1 100px;
 	margin: 5px;
 }
 
 section#search input[type="submit"] {
 	flex: 1 1 100px;
-	background-color: #333;
+	background-color: black;
 	color: #fff;
 	border: none;
 	padding: 10px;
@@ -84,13 +90,13 @@ section#search input[type="submit"] {
 }
 
 section#search input[type="submit"]:hover {
-	background-color: #555;
+	background-color: purple;
 }
 
 footer {
-	background-color: #333;
+	background-color: purple;
 	color: #fff;
-	padding: 5px;
+	padding: 0;
 	text-align: center;
 	position: fixed;
 	bottom: 0;
