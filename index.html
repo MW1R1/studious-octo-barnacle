@@ -1,84 +1,78 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Art Gallery</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <header>
-      <h1>Art Gallery</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Browse by Artist</a></li>
-          <li><a href="#">Browse by Style</a></li>
-          <li><a href="#">Browse by Medium</a></li>
-          <li><a href="#">Cart</a></li>
-          <li><a href="#">My Collection</a></li>
-        </ul>
-      </nav>
-    </header>
-    
-    <main>
-      <section class="featured">
-        <h2>Featured Artwork</h2>
-        <!-- Display featured artwork here -->
-      </section>
-      
-      <section class="search">
-        <h2>Search</h2>
-        <form>
-          <label for="search-term">Search term:</label>
-          <input type="text" id="search-term" name="search-term">
-          <label for="artist">Artist:</label>
-          <select id="artist" name="artist">
-            <option value="">--Select an artist--</option>
-            <option value="Van Gogh">Van Gogh</option>
-            <option value="Picasso">Picasso</option>
-            <option value="Monet">Monet</option>
-          </select>
-          <label for="style">Style:</label>
-          <select id="style" name="style">
-            <option value="">--Select a style--</option>
-            <option value="Impressionism">Impressionism</option>
-            <option value="Cubism">Cubism</option>
-            <option value="Surrealism">Surrealism</option>
-          </select>
-          <label for="medium">Medium:</label>
-          <select id="medium" name="medium">
-            <option value="">--Select a medium--</option>
-            <option value="Oil">Oil</option>
-            <option value="Watercolor">Watercolor</option>
-            <option value="Acrylic">Acrylic</option>
-          </select>
-          <button type="submit">Search</button>
-        </form>
-      </section>
-      
-      <section class="results">
-        <h2>Results</h2>
-        <!-- Display search results here -->
-      </section>
-      
-      <section class="details">
-        <h2>Details</h2>
-        <!-- Display details of selected painting here -->
-      </section>
-      
-      <section class="cart">
-        <h2>Cart</h2>
-        <!-- Display shopping cart and checkout form here -->
-      </section>
-      
-      <section class="collection">
-        <h2>My Collection</h2>
-        <!-- Display collection and sorting options here -->
-      </section>
-    </main>
-    
-    <footer>
-      <p>&copy; Art Gallery 2023</p>
-    </footer>
-  </body>
-</html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Art Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Art Gallery</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Artists</a></li>
+        <li><a href="#">Styles</a></li>
+        <li><a href="#">Mediums</a></li>
+        <li><a href="#">My Collection</a></li>
+        <li><a href="#">Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="featured">
+      <h2>Featured Artwork</h2>
+      <div class="artwork-container">
+        <div class="artwork">
+          <img src="https://via.placeholder.com/300x300" alt="Artwork">
+          <h3>Artwork Title</h3>
+          <p>By Artist Name</p>
+        </div>
+        <div class="artwork">
+          <img src="https://via.placeholder.com/300x300" alt="Artwork">
+          <h3>Artwork Title</h3>
+          <p>By Artist Name</p>
+        </div>
+        <div class="artwork">
+          <img src="https://via.placeholder.com/300x300" alt="Artwork">
+          <h3>Artwork Title</h3>
+          <p>By Artist Name</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="search">
+      <h2>Search Artwork</h2>
+      <form>
+        <label for="artist-select">Artist:</label>
+        <select name="artist-select" id="artist-select">
+          <option value="all">All Artists</option>
+          <option value="artist1">Artist 1</option>
+          <option value="artist2">Artist 2</option>
+          <option value="artist3">Artist 3</option>
+        </select>
+        <label for="style-select">Style:</label>
+        <select name="style-select" id="style-select">
+          <option value="all">All Styles</option>
+          <option value="style1">Style 1</option>
+          <option value="style2">Style 2</option>
+          <option value="style3">Style 3</option>
+        </select>
+        <label for="medium-select">Medium:</label>
+        <select name="medium-select" id="medium-select">
+          <option value="all">All Mediums</option>
+          <option value="medium1">Medium 1</option>
+          <option value="medium2">Medium 2</option>
+          <option value="medium3">Medium 3</option>
+        </select>
+        <button type="submit">Search</button>
+      </form>
+    </section>
+
+    <section id="artwork-list">
+      <h2>Artwork List</h2>
+      <div class="artwork-container">
+        <div class="artwork">
+          <img src="https://via.placeholder.com/300x300
