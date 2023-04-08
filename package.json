@@ -1,4 +1,7 @@
 {
+  "name": "studious-octo-barnacle",
+  "version": "1.0.0",
+  "type": "module",
   "dependencies": {
     "express": "^4.18.2",
     "superagent": "^8.0.9"

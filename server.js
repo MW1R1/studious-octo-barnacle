@@ -1,6 +1,6 @@
-const express = require('express');
-const { post } = require('superagent');
-const path = require('path');
+import express from 'express';
+import { post } from 'superagent';
+import path from 'path';
 
 const app = express();
 const port = 3000;
