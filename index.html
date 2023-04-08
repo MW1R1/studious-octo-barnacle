@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Art Gallery</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Art Gallery</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Browse by Artist</a></li>
+          <li><a href="#">Browse by Style</a></li>
+          <li><a href="#">Browse by Medium</a></li>
+          <li><a href="#">Cart</a></li>
+          <li><a href="#">My Collection</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <main>
+      <section class="featured">
+        <h2>Featured Artwork</h2>
+        <!-- Display featured artwork here -->
+      </section>
+      
+      <section class="search">
+        <h2>Search</h2>
+        <form>
+          <label for="search-term">Search term:</label>
+          <input type="text" id="search-term" name="search-term">
+          <label for="artist">Artist:</label>
+          <select id="artist" name="artist">
+            <option value="">--Select an artist--</option>
+            <option value="Van Gogh">Van Gogh</option>
+            <option value="Picasso">Picasso</option>
+            <option value="Monet">Monet</option>
+          </select>
+          <label for="style">Style:</label>
+          <select id="style" name="style">
+            <option value="">--Select a style--</option>
+            <option value="Impressionism">Impressionism</option>
+            <option value="Cubism">Cubism</option>
+            <option value="Surrealism">Surrealism</option>
+          </select>
+          <label for="medium">Medium:</label>
+          <select id="medium" name="medium">
+            <option value="">--Select a medium--</option>
+            <option value="Oil">Oil</option>
+            <option value="Watercolor">Watercolor</option>
+            <option value="Acrylic">Acrylic</option>
+          </select>
+          <button type="submit">Search</button>
+        </form>
+      </section>
+      
+      <section class="results">
+        <h2>Results</h2>
+        <!-- Display search results here -->
+      </section>
+      
+      <section class="details">
+        <h2>Details</h2>
+        <!-- Display details of selected painting here -->
+      </section>
+      
+      <section class="cart">
+        <h2>Cart</h2>
+        <!-- Display shopping cart and checkout form here -->
+      </section>
+      
+      <section class="collection">
+        <h2>My Collection</h2>
+        <!-- Display collection and sorting options here -->
+      </section>
+    </main>
+    
+    <footer>
+      <p>&copy; Art Gallery 2023</p>
+    </footer>
+  </body>
+</html>
